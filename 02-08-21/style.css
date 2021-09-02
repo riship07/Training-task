@@ -1,0 +1,36 @@
+@keyframes rishi{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+div {
+   background-color: bisque;
+}
+div + p{
+    color: crimson;
+}
+ol {
+    width: 100px;
+    height: 60px;
+    font-size: small;
+    font-style: italic;
+    transition: width 2s height 2s transform 5s;
+}
+ol:hover {
+    font-size: large;
+    height: 100px;
+    transform:rotate(270deg)
+}
+.First{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: rishi;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+
+}
