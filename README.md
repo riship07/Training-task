@@ -28,3 +28,9 @@ Constructor. will the compiler auto call parent constructor
 Just by making an object for a child class? Describe your ans.
 Make one program that achieve polymorphism concept by
 Yourself if you have clearly understood
+
+06-08-21 :
+self vs this (While initializing class level variables)
+Practical on default parameter
+What are magic functions?
+Magic functions available in PHP
