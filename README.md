@@ -34,3 +34,34 @@ self vs this (While initializing class level variables)
 Practical on default parameter
 What are magic functions?
 Magic functions available in PHP
+
+08-08-21 :
+1. yield vs return practically
+
+2. Check whether one can write same function in multiple
+interfaces and how to implement the same in class
+
+3. Can one implement an interface into the interface ?
+Describe your ans by implementing it practically
+
+4. Check whether there is a call of default constructor of base
+class while making object of derived class
+
+5. Print the largest number among three parameters using
+Function and also include default parameter if not passed While function call
+
+6. Swap two variable’s value using call by value and call by
+Reference. Which is better to use and why?
+
+7. Make one abstract class within that keep some methods
+Abstract and some as it is and call those abstract class’s Methods accordingly.
+
+8. Can one use the final keyword with variables? Describe Your ans
+
+9. Override final methods and call them accordingly
+
+10. Inherit final class and use it’s properties accordingly
+
+11. Pass array into the function and update the values into the
+function and after that print an array. Check whether it
+Prints original array or an updated array
