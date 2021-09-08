@@ -1,0 +1,8 @@
+8. Can one use the final keyword with variables? Describe Your ans
+  
+   we can not use final keyword with variables it gives you syntax error 
+   we can use constant keyword with variable or we can just use private acces specifier.
+
+9.Override final methods and call them accordingly
+
+   it will give PHP Fatal error: Cannot override final method BaseClass::function_name()
