@@ -65,3 +65,8 @@ Abstract and some as it is and call those abstract class’s Methods accordingly
 11. Pass array into the function and update the values into the
 function and after that print an array. Check whether it
 Prints original array or an updated array
+
+09-08-21 :
+
+Apply practicals on static function and variables
+https://gitexercises.fracz.com/ visit this site and do exercises accordingly.
