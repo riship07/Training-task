@@ -1,0 +1,22 @@
+
+ @function FIrst($base,$no){
+     $result : 1;
+     @for $i from 0 to $base{
+        $result : $result * $no;
+     }
+     @return $result;
+ }   
+@mixin main($backc) {
+    
+    background-color: $backc;
+}
+body
+{
+  @include main(yellow);
+  
+
+ .button{
+     background-color: $ris;
+ 
+ }
+}

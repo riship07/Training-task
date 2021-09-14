@@ -1,0 +1,16 @@
+1. Pull an Apache image from registry and create a container of the image and login to the running container
+2. How to check the docker service status on local environment
+3. How to remove running docker images and docker containers
+4. Install lando on the local environment and setup a simple application of wordpress with lando.
+
+answers :
+
+1. docker pull httpd
+   docker build -t my-apache2 .
+   docker run -dit --name my-running-app -p 8080:80 my-apache2
+   docker exec -it container_name or id /bin/bash
+2. sudo service docker status
+3. docker rm container_name or id
+   docker rmi image_name or id
+4. lando init
+   lando start 

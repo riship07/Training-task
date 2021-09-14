@@ -1,0 +1,19 @@
+$var : red;
+$ris : rgb(0, 81, 255);
+
+@import "./body";
+.rishi
+{
+    font-style: italic;
+    background-color: blueviolet;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    height : 400px;
+    
+    .button{
+        background-color: $var;
+    }
+
+}
+
