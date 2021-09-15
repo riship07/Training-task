@@ -101,3 +101,17 @@ Prints original array or an updated array
 
 Apply practicals on static function and variables
 https://gitexercises.fracz.com/ visit this site and do exercises accordingly.
+
+
+13-09-21 :
+
+git exercises.
+
+14-09-21 :
+
+1. Make whole dynamic form. Dynamic form means do not write anything in body section of HTML and
+create everything using JS. Onload of body form should be displayed.
+That form should include following fields
+Name, Password, Phone number, Email-id, Address, State, City, Submit button
+--On submittion of this form entered details should be listed on the next page
+--In state dropdown list atleast two states and on selection of state city’s dropdown should be filled accordingly
