@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="obj">count</h1>
+    <div class="rishi" height="500px" width="500px">
+        <div class="patel" id="patel1" height="100px" width="100px">
+             
+        </div>
+    </div>
+    
+    <script>
+        var count =0;
+        document.getElementById("patel1").addEventListener("click",()=>{
+             count=count+1;
+             var i = Math.floor(Math.random()*350+1);
+             var j = Math.floor(Math.random()*350+1);
+             document.querySelector(".patel").style.left = i + "px";
+             document.querySelector(".patel").style.top = j + "px";
+        
+             })
+        setTimeout(countd,30000);
+        function countd(){
+            document.getElementById("obj").innerHTML=count;
+            alert(count);
+        }
+    </script>
+    
+</body>
+</html>

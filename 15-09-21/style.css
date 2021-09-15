@@ -1,0 +1,17 @@
+ .rishi{
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: red;
+ }
+.patel{
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: 50px;
+    background:yellow;
+}
+  
