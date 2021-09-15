@@ -1,11 +1,11 @@
 
-function caller(){
+function rishi(){
 
     var form = document.createElement("form");
     form.setAttribute("method", "post");
     form.setAttribute("id", "form");
     form.setAttribute("action","new.html")
-    form.setAttribute("onsubmit", "setter()")
+    form.setAttribute("onsubmit", "set()")
 
     var div = document.createElement('div');
     div.setAttribute("class", "form-group has-feedback");
@@ -153,7 +153,7 @@ function city(){
     }
     }
 
-    function setter(){
+    function set(){
 
         
 
