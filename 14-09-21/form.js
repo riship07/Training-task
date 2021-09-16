@@ -5,7 +5,7 @@ function rishi(){
     form.setAttribute("method", "post");
     form.setAttribute("id", "form");
     form.setAttribute("action","new.html")
-    form.setAttribute("onsubmit", "set()")
+    form.setAttribute("onsubmit", "return set()")
 
     var div = document.createElement('div');
     div.setAttribute("class", "form-group has-feedback");
@@ -41,12 +41,26 @@ function rishi(){
    
 
     form.appendChild(elementpass);
-
-    
-   
     var br = document.createElement("br");
     form.appendChild(br);
 
+
+    var label = document.createElement('label');
+    label.setAttribute("for", "email");
+    label.innerHTML = "Email";
+    form.appendChild(label);
+    var elementemail = document.createElement("input");
+    elementemail.setAttribute("type", "email");
+    elementemail.setAttribute("name", "email");
+    elementemail.setAttribute("id", "email");
+    elementemail.setAttribute("class", "form-control");
+    elementemail.setAttribute("placeholder", "Email");
+    elementemail.setAttribute("required", "true");
+    form.appendChild(elementemail);
+    var br = document.createElement("br");
+    form.appendChild(br);
+   
+   
     var div = document.createElement('div');
     div.setAttribute("class", "form-group has-feedback");
     var label = document.createElement('label');
@@ -66,20 +80,7 @@ function rishi(){
     var br = document.createElement("br");
     form.appendChild(br);
 
-    var label = document.createElement('label');
-    label.setAttribute("for", "email");
-    label.innerHTML = "Email";
-    form.appendChild(label);
-    var elementemail = document.createElement("input");
-    elementemail.setAttribute("type", "email");
-    elementemail.setAttribute("name", "email");
-    elementemail.setAttribute("id", "email");
-    elementemail.setAttribute("class", "form-control");
-    elementemail.setAttribute("placeholder", "Email");
-    elementemail.setAttribute("required", "true");
-    form.appendChild(elementemail);
-    var br = document.createElement("br");
-    form.appendChild(br);
+   
 
     var label = document.createElement('label');
     label.setAttribute("for", "select");
@@ -155,8 +156,6 @@ function city(){
 
     function set(){
 
-        
-
         var name = document.getElementById("name").value;
         var password = document.getElementById("password").value;
         var tel = document.getElementById("tel").value;
@@ -170,28 +169,36 @@ function city(){
         localStorage.setItem("txtemail", email);
         localStorage.setItem("txtstate", state);
         localStorage.setItem("txtcity", citie);
-
-
+        if(!valid()){
+            return false;
+        }
+        if(!valid1()){
+            return false;
+        }
     }
     function valid(){
         var v = document.getElementById("tel").value;
         console.log(v);
         if(v.length<10){
-            alert("should be big");
+            alert("mobile no. should be big");
             return false;
         }
         else if(v.length>10){
-            alert("should be small");
+            alert("mobile no. should be small");
             return false;
+        }
+        else{
+            return true;
         }
     }
     function valid1(){
         var b = document.getElementById("password").value;
         var pass= /^[A-Za-z]\w{7,14}$/;
         if(!pass.test(b)){
-           alert("invalid");
+           alert("password should be average!");
              return false;
         }
-       
-        
+        else{
+            return true;
+        }
     }
