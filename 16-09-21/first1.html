@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRST</title>
+</head>
+<body>
+    
+    <form action="second.html">
+        <input type="text" id="fname"><br>
+        <input type="text" id="lname"><br>
+        <input type="file" id="file" onChange="getFile(this)"><br>
+        <input type="submit" onclick="getData()" value="submit"><br>
+    </form>
+         
+    <script>
+
+        function getData()
+        {
+           
+        //     document.querySelector("#fi").addEventListener("change",function(){
+        //     const reader = new FileReader.readAsDataURL("img/jpg");
+
+        //     console.log(reader.result);
+        //     reader.addEventListener("load",() =>{
+        //      localStorage.setItem("IMAGES",reader.result);
+        //     })
+            
+        //  })
+          var first = document.getElementById("fname").value;
+          var last= document.getElementById("lname").value;
+           
+          
+          localStorage.setItem("txtname", first);
+          localStorage.setItem("txtlname", last);
+           
+        }
+        function getFile(myfile){
+                var file = myfile.files[0];
+                var filename = file.name;
+                localStorage.setItem("txtfile", filename);
+          }
+    </script>  
+</body>
+</html>

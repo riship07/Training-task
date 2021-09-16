@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second</title>
+</head>
+<body>
+    
+    <p id="data">gftyf</p><br> 
+    <p id="data1">zxcv</p><br>
+    <video width="320" height="240" controls autoplay>
+       <source id="pre" src="" type="video/mp4">
+      
+    </video> 
+    <a href="" id="get_location">location</a>
+    <div id="map">
+        <iframe id="google_map" width="400" height="300"src=""></iframe>
+    </iframe>
+    </div>
+    <script>
+          
+         var recent = localStorage.getItem("txtfile");
+         document.getElementById("pre").setAttribute("src","/home/addweb/Downloads/"+recent);
+
+         document.getElementById("data").innerHTML = localStorage.getItem("txtname");
+         document.getElementById("data1").innerHTML = localStorage.getItem("txtlname");
+         var c = function(pos)
+         {
+             var lat = pos.coords.latitude;
+             var long = pos.coords.longitude;
+             coords = lat +' '+long;
+             document.getElementById('google_map').setAttribute('src','https://maps.google.co.in/?q='+coords+'&z=60&output=embed');
+         }
+         document.getElementById('get_location').onclick=function()
+         {
+         navigator.geolocation.getCurrentPosition(c);
+         return false;
+         }
+    </script>
+
+     
+   
+</body>
+</html>

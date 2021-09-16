@@ -119,3 +119,9 @@ Name, Password, Phone number, Email-id, Address, State, City, Submit button
 15-09-21 :
 
 Take one div element of 500 X 500. Within that div take another div of 100 X 100. On each click of inner div it’s posistion should be changed and display again on some random position this should be go on till 30 seconds. After completion of 30 seconds count number of clicks and display in alert.
+
+16-09-21 :
+
+Save all your practicals as Assignment 1, Assignment 2 and onwards.
+Make one html file and take 3 buttons name as Assignment 1, Assignment 2 and Assignment 3 .
+Onclick of each button that file should be opened on the same URL without redirecting.

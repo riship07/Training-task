@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="rishi" type="button" onclick="loadDc()">back</button>
+  <div id="demo">
+    <h2>AJAX</h2>
+    <button type="button" onclick="loadDoc()">Assignment 1=nested div</button>
+    <button type="button" onclick="loadDoc1()">Assignment 2=task:saas</button>
+    <button type="button" onclick="loadDoc2()">Assignment 3=localstorage</button>
+  </div>
+
+ 
+
+    <script>
+       function loadDoc2() {
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function() {
+        document.getElementById("demo").innerHTML =this.responseText;
+      }
+      xhttp.open("GET", "first1.html");
+      xhttp.send();
+    }
+      function loadDoc1() {
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function() {
+        document.getElementById("demo").innerHTML =this.responseText;
+      }
+      xhttp.open("GET", "file.html");
+      xhttp.send();
+    }
+    function loadDoc() {
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function() {
+        document.getElementById("demo").innerHTML =this.responseText;
+      }
+      xhttp.open("GET", "practise.html");
+      xhttp.send();
+    }
+    function loadDc() {
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function() {
+        document.getElementById("demo").innerHTML =this.responseText;
+      }
+      xhttp.open("GET", "fi.html");
+      xhttp.send();
+    }
+    </script>
+</body>
+</html>
+
+
+
