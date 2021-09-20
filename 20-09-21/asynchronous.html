@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="patel"></h1>
+    <h1 id="ris"></h1>
+    <script>
+          
+           function setdata(){
+               var a = 20;
+               var b = 10;
+               var n = a + b
+               document.getElementById("ris").innerHTML=n;
+           }
+           function getdata(){
+               document.getElementById("patel").innerHTML="hiiiiii"
+           }
+           setTimeout(setdata,3000);    //this function take 3 seconds to run
+           getdata();                  //this function executes before the setdata function
+    </script>
+  
+</body>
+</html>

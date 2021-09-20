@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="patel"></h1>
+    <h1 id="ris"></h1>
+    <script>
+        function setdata(valuee) {
+          document.getElementById("patel").innerHTML = valuee;
+        }
+        
+        let myPromise = new Promise(function(myResolve, myReject) {
+          var a =20;
+          var b =10;
+          myResolve(a+b);
+        });
+        
+        myPromise.then(
+          function(value) {setdata(value);},
+          function(error) {setdata(error);}
+        );
+        </script>
+</body>
+</html>
