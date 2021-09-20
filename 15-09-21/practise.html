@@ -9,6 +9,7 @@
 </head>
 <body>
     <h1 id="obj">count</h1>
+    <h1 id="time">tm</h1>
     <div class="rishi" height="500px" width="500px">
         <div class="patel" id="patel1" height="100px" width="100px">
              
@@ -16,6 +17,14 @@
     </div>
     
     <script>
+      
+    
+        function stime(){
+            const tm= new Date()
+            
+            document.getElementById("time").innerHTML=tm;
+        }
+        setInterval(stime,1000);
         var count =0;
         document.getElementById("patel1").addEventListener("click",()=>{
              count=count+1;
