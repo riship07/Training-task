@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first</title>
+</head>
+<body>
+    <p id="patel"></p>
+    <button onclick="mai()">START</button>
+    <button onclick="ris()">STOP</button>
+  
+    <script>
+      function mai(){
+        var r=0
+        x=setInterval(function(){
+            document.getElementById("patel").innerHTML = r;
+            r = r+1;
+            
+        },1000);
+        console.log(r)
+    }
+        
+    
+    function ris(){
+            clearInterval(x);
+        }
+    </script>
+</body>
+</html>
