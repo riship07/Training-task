@@ -140,3 +140,16 @@ Onclick of each button that file should be opened on the same URL without redire
 --Destructuring Objects
 --Practicals of promise, Schedulers
 --ES6 Classes
+
+22-09-21 :
+
+read TS Basics from typescriptlang.org
+
+23-09-21 :
+
+Practical in TS
+class
+interface
+“use strict”
+composing types
+Generics
