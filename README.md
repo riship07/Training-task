@@ -153,3 +153,7 @@ interface
 “use strict”
 composing types
 Generics
+
+24-09-21 :
+
+typescript documentation : ts for functional programmer
