@@ -168,5 +168,19 @@ Generics
 
 typescript documentation : ts for functional programmer
 
+# 28-09-21 :
 
+Narrowing
+More on functions
+Object types
+Type manipulation
+
+# 29-09-21 :
+
+Creating types from types
+Generics
+KeyOf type operator
+TypeOf type operator
+Indexed access types
+Conditional types
 
