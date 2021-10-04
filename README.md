@@ -184,3 +184,7 @@ TypeOf type operator
 Indexed access types
 Conditional types
 
+# 04-10-21 :
+
+php revised topic tasks.
+
