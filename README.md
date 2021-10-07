@@ -188,3 +188,7 @@ Conditional types
 
 php revised topic tasks.
 
+# 06-10-21 :
+
+Pass an array into the function as a parameter and 
+update the values.
